@@ -7,6 +7,9 @@ import glob
 import numpy as np
 import tensorflow as tf
 
+configuration = tf.compat.v1.ConfigProto(device_count={"GPU": 0})
+session = tf.compat.v1.Session(config=configuration)
+
 # from tensorflow.compat.v1 import ConfigProto
 # from tensorflow.compat.v1 import InteractiveSession
 
@@ -15,7 +18,7 @@ import tensorflow as tf
 # config.gpu_options.allow_growth = True
 # session = InteractiveSession(config=config)
 # Keras
-from tensorflow.keras.applications.resnet50 import preprocess_input
+
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 
