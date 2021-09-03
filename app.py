@@ -87,4 +87,8 @@ def upload():
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run(debug=True)
+=======
+    app.run()
+>>>>>>> 9b4d9c957d4f3a8baec352ff05c1d5415e41a224
